@@ -46,12 +46,22 @@ padding:60px 20px;
 text-align:center;
 }
 
-.products{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-}
+<section id="products">
+  <h2>Our Saree Collection</h2>
+  <div class="product-grid">
+    <div class="product">
+      <img src="images/gadwal1.jpg" alt="Gadwal Silk Saree">
+      <h3>Red Gadwal Silk Saree</h3>
+      <p>Price: ₹2800</p>
+    </div>
+    <div class="product">
+      <img src="images/gadwal2.jpg" alt="Gadwal Cotton Silk Saree">
+      <h3>Green Gadwal Cotton Silk Saree</h3>
+      <p>Price: ₹2500</p>
+    </div>
+    <!-- Add more products -->
+  </div>
+</section>
 
 .card{
 background:white;
@@ -79,8 +89,13 @@ text-align:center;
 
 </style>
 
-</head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Roboto', sans-serif; margin:0; padding:0; }
+h2 { text-align:center; margin:40px 0 20px; }
+section { padding:20px; }
+</style>
 <body>
 
 <header>
@@ -92,7 +107,15 @@ text-align:center;
 <a href="#">Home</a>
 <a href="#">About</a>
 <a href="#">Products</a>
-<a href="#">Contact</a>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form action="mailto:info@mounsu.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 </nav>
 
 <div class="hero">
@@ -102,7 +125,10 @@ text-align:center;
 
 <section>
 
-<h2>About Us</h2>
+<section id="about">
+  <h2>About Mounsu</h2>
+  <p>Mounsu is a growing business in Gadwal focused on delivering authentic Gadwal handloom sarees directly from weavers. Our mission is to provide quality products at affordable prices while supporting local artisans.</p>
+</section>
 
 <p>
 Mounsu is a growing business focused on delivering quality products and dependable service to customers.
@@ -160,3 +186,22 @@ Contact on WhatsApp
 
 </body>
 </html>
+<a class="whatsapp-button" href="https://wa.me/9966376524" target="_blank">
+  💬 Chat with us on WhatsApp
+</a>
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+.whatsapp-button:hover {
+  background-color: #1ebe57;
+}
