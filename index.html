@@ -1,245 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Mounsu Business</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mounsu - Gadwal Sarees</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+    h1,h2,h3 { font-family: 'Playfair Display', serif; margin: 0 0 10px 0; }
+    a { text-decoration: none; color: inherit; }
 
-<style>
+    /* Header */
+    header { background-color: #f8f0e3; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top:0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+    header h1 { font-size: 1.5rem; color: #800000; }
+    nav a { margin: 0 10px; font-weight: bold; color: #333; }
+    nav a:hover { color: #800000; }
 
-body{
-font-family:Arial;
-margin:0;
-background:#f4f4f4;
-}
+    /* Hero / Welcome */
+    #hero { background: url('images/hero-saree.jpg') center/cover no-repeat; color: white; text-align: center; padding: 120px 20px 80px 20px; }
+    #hero h2 { font-size: 2.5rem; margin-bottom: 15px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5);}
+    #hero p { font-size: 1.2rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
 
-header{
-background:#0f172a;
-color:white;
-padding:30px;
-text-align:center;
-}
+    /* Sections */
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    section h2 { text-align: center; margin-bottom: 40px; color: #800000; }
 
-nav{
-background:#1e293b;
-padding:12px;
-text-align:center;
-}
+    /* About Section */
+    #about p { max-width: 800px; margin: auto; font-size: 1.1rem; text-align: center; }
 
-nav a{
-color:white;
-margin:15px;
-text-decoration:none;
-font-size:18px;
-}
+    /* Products Section */
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; padding: 20px 0; }
+    .product { background-color: #fff8f0; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 3px 6px rgba(0,0,0,0.1);}
+    .product img { width: 100%; border-radius: 8px; }
+    .product h3 { margin-top: 8px; font-size: 1.2rem; }
+    .product p { color: #555; margin: 5px 0; }
+    .order-btn { display: inline-block; margin-top: 6px; padding: 8px 12px; background-color: #25D366; color: white; border-radius: 6px; font-weight: bold; }
+    .order-btn:hover { background-color: #1ebe57; }
 
-.hero{
-background:#e2e8f0;
-padding:100px 20px;
-text-align:center;
-}
+    /* Contact Section */
+    form { max-width: 500px; margin: auto; display: flex; flex-direction: column; }
+    form input, form textarea { padding: 10px; margin: 10px 0; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem; }
+    form button { padding: 10px; background-color: #800000; color: white; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; }
+    form button:hover { background-color: #a00000; }
 
-.hero h2{
-font-size:40px;
-}
+    /* Footer */
+    footer { text-align: center; padding: 20px; background-color: #f8f0e3; color: #333; margin-top: 40px; }
 
-section{
-padding:60px 20px;
-text-align:center;
-}
+    /* WhatsApp Fixed Button */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    .whatsapp-button:hover { background-color: #1ebe57; }
 
-<section id="products">
-  <h2>Our Saree Collection</h2>
-  <div class="product-grid">
-    <div class="product">
-      <img src="images/gadwal1.jpg" alt="Red Gadwal Silk Saree">
-      <h3>Red Gadwal Silk Saree</h3>
-      <p>Price: ₹2800</p>
-    </div>
-    <div class="product">
-      <img src="images/gadwal2.jpg" alt="Green Gadwal Cotton Silk Saree">
-      <h3>Green Gadwal Cotton Silk Saree</h3>
-      <p>Price: ₹2500</p>
-    </div>
-    <div class="product">
-      <img src="images/gadwal3.jpg" alt="Blue Gadwal Silk Saree">
-      <h3>Blue Gadwal Silk Saree</h3>
-      <p>Price: ₹3000</p>
-    </div>
-  </div>
-</section>
-
-.card{
-background:white;
-padding:25px;
-width:260px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.whatsapp{
-background:#25D366;
-color:white;
-padding:15px 25px;
-text-decoration:none;
-border-radius:8px;
-font-size:18px;
-}
-
-footer{
-background:#0f172a;
-color:white;
-padding:20px;
-text-align:center;
-}
-
-</style>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<style>
-body { font-family: 'Roboto', sans-serif; margin:0; padding:0; }
-h2 { text-align:center; margin:40px 0 20px; }
-section { padding:20px; }
-</style>
+    /* Responsive */
+    @media (max-width:768px) { #hero h2 { font-size: 2rem; } #hero p { font-size: 1rem; } }
+  </style>
+</head>
 <body>
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
+  <!-- Header -->
+  <header>
+    <h1>Mounsu</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-.product img {
-  width: 100%;
-  border-radius: 8px;
-}
+  <!-- Hero / Welcome -->
+  <section id="hero">
+    <h2>Welcome to Mounsu</h2>
+    <p>Your trusted business partner in Gadwal</p>
+  </section>
 
-.product h3 {
-  margin-top: 8px;
-  font-size: 1.1rem;
-}
+  <!-- About -->
+  <section id="about">
+    <h2>About Mounsu</h2>
+    <p>Mounsu is a growing business in Gadwal focused on delivering authentic Gadwal handloom sarees directly from weavers. Our mission is to provide quality products at affordable prices while supporting local artisans.</p>
+  </section>
 
-.product p {
-  color: #555;
-}
+  <!-- Products -->
+  <section id="products">
+    <h2>Our Saree Collection</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/gadwal1.jpg" alt="Red Gadwal Silk Saree">
+        <h3>Red Gadwal Silk Saree</h3>
+        <p>Price: ₹2800</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/gadwal2.jpg" alt="Green Gadwal Cotton Silk Saree">
+        <h3>Green Gadwal Cotton Silk Saree</h3>
+        <p>Price: ₹2500</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/gadwal3.jpg" alt="Blue Gadwal Silk Saree">
+        <h3>Blue Gadwal Silk Saree</h3>
+        <p>Price: ₹3000</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
+      </div>
+    </div>
+  </section>
 
-.order-btn {
-  display: inline-block;
-  margin-top: 6px;
-  padding: 8px 12px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-}
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="mailto:info@mounsu.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-.order-btn:hover {
-  background-color: #1ebe57;
-}
-<h1>MOUNSU</h1>
-<p>Quality Products • Trusted Service</p>
-</header>
+  <!-- Footer -->
+  <footer>
+    📍 Gadwal, Telangana, India<br>
+    © 2026 Mounsu Business
+  </footer>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Products</a>
-<section id="contact">
-  <h2>Contact Us</h2>
-  <form action="mailto:info@mounsu.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-</nav>
-
-<div class="hero">
-<h2>Welcome to Mounsu</h2>
-<p>Your trusted business partner in Gadwal</p>
-</div>
-
-<section>
-
-<section id="about">
-  <h2>About Mounsu</h2>
-  <p>Mounsu is a growing business in Gadwal focused on delivering authentic Gadwal handloom sarees directly from weavers. Our mission is to provide quality products at affordable prices while supporting local artisans.</p>
-</section>
-
-<p>
-Mounsu is a growing business focused on delivering quality products and dependable service to customers.
-</p>
-
-</section>
-
-<section>
-
-<h2>Our Products</h2>
-
-<div class="products">
-
-<div class="card">
-<h3>Quality Products</h3>
-<p>Reliable and trusted items.</p>
-</div>
-
-<div class="card">
-<h3>Affordable Price</h3>
-<p>Best price for customers.</p>
-</div>
-
-<div class="card">
-<h3>Trusted Service</h3>
-<p>Customer satisfaction first.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<iframe
-src="https://maps.google.com/maps?q=gadwal&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%"
-height="300"
-style="border:0;">
-</iframe>
-
-<p>📍 Gadwal, Telangana, India</p>
-
-<a class="whatsapp" href="https://wa.me/919966376524">
-Contact on WhatsApp
-</a>
-
-</section>
-
-<footer>
-
-<p>© 2026 Mounsu Business</p>
-
-</footer>
+  <!-- WhatsApp Button -->
+  <a class="whatsapp-button" href="https://wa.me/919876543210" target="_blank">💬 Chat on WhatsApp</a>
 
 </body>
 </html>
-<a class="whatsapp-button" href="https://wa.me/9966376524" target="_blank">
-  💬 Chat with us on WhatsApp
-</a>
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  padding: 12px 18px;
-  border-radius: 50px;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  z-index: 1000;
-}
-.whatsapp-button:hover {
-  background-color: #1ebe57;
-}
