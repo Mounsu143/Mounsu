@@ -6,128 +6,61 @@
   <title>Mounsu - Gadwal Sarees</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* General Styles */
-    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
-    h1,h2,h3 { font-family: 'Playfair Display', serif; margin: 0 0 10px 0; }
-    a { text-decoration: none; color: inherit; }
+    /* GENERAL STYLES */
+    body { font-family: 'Roboto', sans-serif; margin:0; padding:0; color:#333; background-color:#fff8f0; }
+    h1,h2,h3 { font-family: 'Playfair Display', serif; margin:0 0 10px 0; }
+    a { text-decoration:none; color:inherit; }
 
-    /* Header */
-    header { background-color: #f8f0e3; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top:0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
-    header h1 { font-size: 1.5rem; color: #800000; }
-    nav a { margin: 0 10px; font-weight: bold; color: #333; }
-    nav a:hover { color: #800000; }
+    /* HEADER */
+    header { background-color:#800000; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100; box-shadow:0 2px 6px rgba(0,0,0,0.2);}
+    header h1 { color:#fff; font-size:1.8rem; }
+    nav a { margin:0 12px; font-weight:bold; color:#fff; transition:0.3s; }
+    nav a:hover { color:#ffd700; }
 
-    /* Hero / Welcome */
-    #hero { background: url('images/hero-saree.jpg') center/cover no-repeat; color: white; text-align: center; padding: 120px 20px 80px 20px; }
-    #hero h2 { font-size: 2.5rem; margin-bottom: 15px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5);}
-    #hero p { font-size: 1.2rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+    /* HERO */
+    #hero { background: url('images/hero-saree.jpg') center/cover no-repeat; color:white; text-align:center; padding:140px 20px 100px 20px; position:relative; }
+    #hero::after { content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.4); }
+    #hero h2 { font-size:2.8rem; margin-bottom:15px; position:relative; z-index:1; }
+    #hero p { font-size:1.2rem; position:relative; z-index:1; }
 
-    /* Sections */
-    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
-    section h2 { text-align: center; margin-bottom: 40px; color: #800000; }
+    /* SECTIONS */
+    section { padding:60px 20px; max-width:1200px; margin:auto; }
+    section h2 { text-align:center; margin-bottom:40px; color:#800000; font-size:2rem; }
 
-    /* About Section */
-    #about p { max-width: 800px; margin: auto; font-size: 1.1rem; text-align: center; }
+    /* ABOUT */
+    #about p { max-width:800px; margin:auto; font-size:1.1rem; text-align:center; }
 
-    /* Products Section */
-   <section id="products">
-  <h2>Our Saree Collection</h2>
-  <div class="product-grid">
-    <div class="product">
-      <img src="images/gadwal1.jpg" alt="Red Gadwal Silk Saree">
-      <h3>Red Gadwal Silk Saree</h3>
-      <p>Price: ₹2800</p>
-      <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
-    </div>
-    <div class="product">
-      <img src="images/gadwal2.jpg" alt="Green Gadwal Cotton Silk Saree">
-      <h3>Green Gadwal Cotton Silk Saree</h3>
-      <p>Price: ₹2500</p>
-      <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
-    </div>
-    <div class="product">
-      <img src="images/gadwal3.jpg" alt="Blue Gadwal Silk Saree">
-      <h3>Blue Gadwal Silk Saree</h3>
-      <p>Price: ₹3000</p>
-      <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
-    </div>
-    <div class="product">
-      <img src="images/gadwal4.jpg" alt="Pink Gadwal Silk Saree">
-      <h3>Pink Gadwal Silk Saree</h3>
-      <p>Price: ₹2700</p>
-      <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
-    </div>
-    <div class="product">
-      <img src="images/gadwal5.jpg" alt="Yellow Gadwal Cotton Saree">
-      <h3>Yellow Gadwal Cotton Saree</h3>
-      <p>Price: ₹2600</p>
-      <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
-    </div>
-    <div class="product">
-      <img src="images/gadwal6.jpg" alt="Orange Gadwal Silk Saree">
-      <h3>Orange Gadwal Silk Saree</h3>
-      <p>Price: ₹2800</p>
-      <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
-    </div>
-    <div class="product">
-      <img src="images/gadwal7.jpg" alt="Purple Gadwal Silk Saree">
-      <h3>Purple Gadwal Silk Saree</h3>
-      <p>Price: ₹3000</p>
-      <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
-    </div>
-    <div class="product">
-      <img src="images/gadwal8.jpg" alt="White Gadwal Cotton Saree">
-      <h3>White Gadwal Cotton Saree</h3>
-      <p>Price: ₹2400</p>
-      <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
-    </div>
-    <div class="product">
-      <img src="images/gadwal9.jpg" alt="Black Gadwal Silk Saree">
-      <h3>Black Gadwal Silk Saree</h3>
-      <p>Price: ₹3200</p>
-      <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
-    </div>
-    <div class="product">
-      <img src="images/gadwal10.jpg" alt="Multicolor Gadwal Silk Saree">
-      <h3>Multicolor Gadwal Silk Saree</h3>
-      <p>Price: ₹3500</p>
-      <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
-    </div>
-  </div>
-</section>
+    /* PRODUCTS GRID */
+    .product-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:25px; padding:20px 0; }
+    .product { background:#fff; padding:15px; border-radius:10px; text-align:center; box-shadow:0 6px 15px rgba(0,0,0,0.1); transition:0.3s; }
+    .product:hover { transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.2); }
+    .product img { width:100%; border-radius:10px; transition:0.3s; }
+    .product img:hover { transform:scale(1.05); }
+    .product h3 { margin-top:10px; font-size:1.2rem; color:#800000; }
+    .product p { color:#555; margin:5px 0; }
+    .order-btn { display:inline-block; margin-top:6px; padding:10px 16px; background-color:#25D366; color:white; border-radius:8px; font-weight:bold; transition:0.3s; }
+    .order-btn:hover { background-color:#1ebe57; }
 
-    /* Contact Section */
-    form { max-width: 500px; margin: auto; display: flex; flex-direction: column; }
-    form input, form textarea { padding: 10px; margin: 10px 0; border-radius: 6px; border: 1px solid #ccc; font-size: 1rem; }
-    form button { padding: 10px; background-color: #800000; color: white; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; }
-    form button:hover { background-color: #a00000; }
+    /* CONTACT FORM */
+    form { max-width:500px; margin:auto; display:flex; flex-direction:column; }
+    form input, form textarea { padding:12px; margin:10px 0; border-radius:8px; border:1px solid #ccc; font-size:1rem; }
+    form button { padding:12px; background-color:#800000; color:white; border:none; border-radius:8px; font-size:1rem; font-weight:bold; cursor:pointer; transition:0.3s; }
+    form button:hover { background-color:#a00000; }
 
-    /* Footer */
-    footer { text-align: center; padding: 20px; background-color: #f8f0e3; color: #333; margin-top: 40px; }
+    /* FOOTER */
+    footer { text-align:center; padding:25px 20px; background-color:#800000; color:#fff; }
 
-    /* WhatsApp Fixed Button */
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 50px;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      z-index: 1000;
-    }
-    .whatsapp-button:hover { background-color: #1ebe57; }
+    /* WHATSAPP BUTTON */
+    .whatsapp-button { position:fixed; bottom:20px; right:20px; background-color:#25D366; color:white; padding:14px 20px; border-radius:50px; font-weight:bold; text-decoration:none; box-shadow:0 6px 10px rgba(0,0,0,0.2); z-index:1000; transition:0.3s; }
+    .whatsapp-button:hover { background-color:#1ebe57; }
 
-    /* Responsive */
-    @media (max-width:768px) { #hero h2 { font-size: 2rem; } #hero p { font-size: 1rem; } }
+    /* RESPONSIVE */
+    @media(max-width:768px){ #hero h2 { font-size:2rem; } #hero p { font-size:1rem; } }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- HEADER -->
   <header>
     <h1>Mounsu</h1>
     <nav>
@@ -138,44 +71,87 @@
     </nav>
   </header>
 
-  <!-- Hero / Welcome -->
+  <!-- HERO -->
   <section id="hero">
     <h2>Welcome to Mounsu</h2>
-    <p>Your trusted business partner in Gadwal</p>
+    <p>Your trusted Gadwal Saree partner</p>
   </section>
 
-  <!-- About -->
+  <!-- ABOUT -->
   <section id="about">
     <h2>About Mounsu</h2>
-    <p>Mounsu is a growing business in Gadwal focused on delivering authentic Gadwal handloom sarees directly from weavers. Our mission is to provide quality products at affordable prices while supporting local artisans.</p>
+    <p>Mounsu is a growing business in Gadwal focused on delivering authentic Gadwal handloom sarees directly from weavers. We provide quality products at affordable prices while supporting local artisans.</p>
   </section>
 
-  <!-- Products -->
+  <!-- PRODUCTS -->
   <section id="products">
     <h2>Our Saree Collection</h2>
     <div class="product-grid">
+      <!-- Sample Products -->
       <div class="product">
         <img src="images/gadwal1.jpg" alt="Red Gadwal Silk Saree">
         <h3>Red Gadwal Silk Saree</h3>
-        <p>Price: ₹2800</p>
-        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
+        <p>₹2800</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 WhatsApp Order</a>
       </div>
       <div class="product">
         <img src="images/gadwal2.jpg" alt="Green Gadwal Cotton Silk Saree">
         <h3>Green Gadwal Cotton Silk Saree</h3>
-        <p>Price: ₹2500</p>
-        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
+        <p>₹2500</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 WhatsApp Order</a>
       </div>
       <div class="product">
         <img src="images/gadwal3.jpg" alt="Blue Gadwal Silk Saree">
         <h3>Blue Gadwal Silk Saree</h3>
-        <p>Price: ₹3000</p>
-        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 Order on WhatsApp</a>
+        <p>₹3000</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 WhatsApp Order</a>
+      </div>
+      <div class="product">
+        <img src="images/gadwal4.jpg" alt="Pink Gadwal Silk Saree">
+        <h3>Pink Gadwal Silk Saree</h3>
+        <p>₹2700</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 WhatsApp Order</a>
+      </div>
+      <div class="product">
+        <img src="images/gadwal5.jpg" alt="Yellow Gadwal Cotton Saree">
+        <h3>Yellow Gadwal Cotton Saree</h3>
+        <p>₹2600</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 WhatsApp Order</a>
+      </div>
+      <div class="product">
+        <img src="images/gadwal6.jpg" alt="Orange Gadwal Silk Saree">
+        <h3>Orange Gadwal Silk Saree</h3>
+        <p>₹2800</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 WhatsApp Order</a>
+      </div>
+      <div class="product">
+        <img src="images/gadwal7.jpg" alt="Purple Gadwal Silk Saree">
+        <h3>Purple Gadwal Silk Saree</h3>
+        <p>₹3000</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 WhatsApp Order</a>
+      </div>
+      <div class="product">
+        <img src="images/gadwal8.jpg" alt="White Gadwal Cotton Saree">
+        <h3>White Gadwal Cotton Saree</h3>
+        <p>₹2400</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 WhatsApp Order</a>
+      </div>
+      <div class="product">
+        <img src="images/gadwal9.jpg" alt="Black Gadwal Silk Saree">
+        <h3>Black Gadwal Silk Saree</h3>
+        <p>₹3200</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 WhatsApp Order</a>
+      </div>
+      <div class="product">
+        <img src="images/gadwal10.jpg" alt="Multicolor Gadwal Silk Saree">
+        <h3>Multicolor Gadwal Silk Saree</h3>
+        <p>₹3500</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="order-btn">💬 WhatsApp Order</a>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- CONTACT -->
   <section id="contact">
     <h2>Contact Us</h2>
     <form action="mailto:info@mounsu.com" method="post" enctype="text/plain">
@@ -186,13 +162,13 @@
     </form>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
     📍 Gadwal, Telangana, India<br>
     © 2026 Mounsu Business
   </footer>
 
-  <!-- WhatsApp Button -->
+  <!-- WHATSAPP BUTTON -->
   <a class="whatsapp-button" href="https://wa.me/919876543210" target="_blank">💬 Chat on WhatsApp</a>
 
 </body>
