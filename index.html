@@ -50,16 +50,20 @@ text-align:center;
   <h2>Our Saree Collection</h2>
   <div class="product-grid">
     <div class="product">
-      <img src="images/gadwal1.jpg" alt="Gadwal Silk Saree">
+      <img src="images/gadwal1.jpg" alt="Red Gadwal Silk Saree">
       <h3>Red Gadwal Silk Saree</h3>
       <p>Price: ₹2800</p>
     </div>
     <div class="product">
-      <img src="images/gadwal2.jpg" alt="Gadwal Cotton Silk Saree">
+      <img src="images/gadwal2.jpg" alt="Green Gadwal Cotton Silk Saree">
       <h3>Green Gadwal Cotton Silk Saree</h3>
       <p>Price: ₹2500</p>
     </div>
-    <!-- Add more products -->
+    <div class="product">
+      <img src="images/gadwal3.jpg" alt="Blue Gadwal Silk Saree">
+      <h3>Blue Gadwal Silk Saree</h3>
+      <p>Price: ₹3000</p>
+    </div>
   </div>
 </section>
 
@@ -98,7 +102,41 @@ section { padding:20px; }
 </style>
 <body>
 
-<header>
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin-top: 8px;
+  font-size: 1.1rem;
+}
+
+.product p {
+  color: #555;
+}
+
+.order-btn {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 8px 12px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.order-btn:hover {
+  background-color: #1ebe57;
+}
 <h1>MOUNSU</h1>
 <p>Quality Products • Trusted Service</p>
 </header>
